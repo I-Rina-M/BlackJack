@@ -1,7 +1,7 @@
 //blackJack game
 
 let player = {
-	name: "Irina",
+	name: "You have", //name removed for upload
 	chips: 200
 }
 console.log(player.name)
@@ -16,7 +16,7 @@ let cardsEl = document.querySelector('#cards-el')
 
 let playerEl = document.getElementById('player-el')
 
-playerEl.textContent = player.name + " $" + player.chips
+playerEl.textContent = player.name + " $" + player.chips + "worth of chips."
 
 function getRandomCard() {
 	randNum = Math.floor(Math.random()*13)+1 //returns nums 1 through 13
@@ -36,6 +36,8 @@ function startGame() {
 		let secondCard = getRandomCard()
 		sum = firstCard + secondCard
 		cards = [firstCard, secondCard]
+		messageEl.textContent = "Do You Want to Play a Round?"
+		sumEl.textContent = "Sum: "
 		renderGame()
 
 }
