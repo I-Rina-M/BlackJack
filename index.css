@@ -1,0 +1,34 @@
+h1 {
+    color: goldenrod;
+}body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("table.jpg");
+	text-align: center;
+	color: white; 
+	font-weight: bold;
+	background-size: cover; /*will cover whole browser window rgardless of size
+}
+
+h1 {
+    color: goldenrod; /*overrides white in body */
+}
+
+#message-el { /*hash tag id selector */
+	color: white;
+	font-style: italic;
+    
+}
+
+button {
+	background-color: goldenrod;
+	color: #016f32;
+	width: 150px;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: none;
+	border-radius: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px
+
+}
